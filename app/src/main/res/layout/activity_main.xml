@@ -65,7 +65,8 @@
         tools:layout_constraintTop_creator="1"
         android:layout_marginStart="61dp"
         android:layout_marginEnd="61dp"
-        tools:ignore="TextViewEdits" />
+        tools:ignore="Deprecated,HardcodedText,TextViewEdits"
+        android:maxLines="1" />
 
     <Button
         android:id="@+id/login"
@@ -89,7 +90,8 @@
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1"
-        app:layout_constraintHorizontal_bias="1.0" />
+        app:layout_constraintHorizontal_bias="1.0"
+        tools:ignore="HardcodedText,RtlHardcoded" />
 
     <Button
         android:id="@+id/register"
@@ -110,7 +112,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintHorizontal_bias="0.771"
-        android:layout_marginRight="38dp" />
+        android:layout_marginRight="38dp"
+        tools:targetApi="lollipop"
+        tools:ignore="HardcodedText,RtlHardcoded" />
 
 
 </android.support.constraint.ConstraintLayout>
